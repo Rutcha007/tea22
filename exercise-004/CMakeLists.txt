@@ -12,8 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 find_package(fmt REQUIRED)
 
 
-# add the executable
-add_executable(${PROJECT_NAME} main.cpp)
+# add the executable triangle zusätzlich
+add_executable(${PROJECT_NAME} main.cpp triangle.cpp)
 
 # Add libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE
