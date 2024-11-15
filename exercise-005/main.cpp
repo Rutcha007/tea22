@@ -4,6 +4,7 @@
 #include "CLI/CLI.hpp"
 #include "config.h"
 #include "image.h"
+#include "imageinfo.h"
 
 auto main(int argc, char **argv) -> int
 {
@@ -31,6 +32,8 @@ auto main(int argc, char **argv) -> int
 
     /* INSERT YOUR CODE HERE */
 
+    ImageInfo* info = newImageInfo();
+    
     fmt::println("Size of the image data: {}",sizeof(image));
 
     return 0; /* exit gracefully*/
