@@ -4,7 +4,7 @@
 
 
 ImageInfo* newImageInfo(){
-    ImageInfo* tmp = (ImageInfo*) malloc(sizeof(ImageInfo)); //bekommt Größe durch "image.h"
+    ImageInfo* tmp = (ImageInfo*) malloc(sizeof(ImageInfo));
     tmp -> height = image_uc_height;
     tmp -> width = image_uc_width;
     tmp -> data = image_uc_data;
