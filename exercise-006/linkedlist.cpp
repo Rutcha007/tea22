@@ -1,12 +1,14 @@
 #include "linkedlist.h"
+#include "stdlib.h"
 
 
-ListNode* NewListNode(void)
+ListNode* NewListNode()
 {
-
+    ListNode* temp = (ListNode*) malloc(sizeof(ListNode));
+    return temp;
 };
 
 void FreeListNode(ListNode* elem)
 {
-    
+    free(elem);
 };
