@@ -14,4 +14,7 @@ typedef struct List
     unsigned int size;
 }List_t;
 
+ListNode* NewListNode(void);
+void FreeListNode(ListNode* elem);
+
 #endif
