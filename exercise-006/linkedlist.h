@@ -16,5 +16,8 @@ typedef struct List
 
 ListNode* NewListNode(void);
 void FreeListNode(ListNode* elem);
+ListNode* GetPrevious(List* list, ListNode* elem);
+ListNode* GetElement(List* list, unsigned int index);
+void InsertInfoLinkedList(List* list, unsigned int data);
 
 #endif
