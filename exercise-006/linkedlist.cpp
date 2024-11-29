@@ -85,14 +85,16 @@ int RemovefromLinkedList(List* list, ListNode* elem)
     else if (list->pHead == elem && list->pTail == elem)
     {
         FreeListNode(elem);
-        list->pHead == nullptr;
-        list->pTail == nullptr;
+        list->pHead = nullptr;
+        list->pTail = nullptr;
+        list->size = 0;
     }
     else if (list->pTail != elem)
     {
         ListNode* temp = GetPrevious(list,elem); // finde element das vor dem element ist
         temp->pNext = elem->pNext; // vorheriges element bekommt auf sein next das next vom zu löschenden element
         FreeListNode(elem);
+        list->size -= 1;
     }
     return 0;
 }
